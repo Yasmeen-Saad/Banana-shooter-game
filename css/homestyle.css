@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('../images/BG_Jungle_hor_rpt_1280x800.png');
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 40px;
+    padding-top: 150px;
+    text-align: center;
+    color: rgb(255, 119, 0);
+}
+label{
+    text-align: center;
+    font-size: 18px;
+    color: wheat;
+}
+#username{
+    margin: 10px;
+    opacity: 0.5;
+    border-style: none;
+    border-radius: 5px;
+    height: 30px;
+}
+#playbutton{
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}

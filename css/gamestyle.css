@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('../images/BG_Jungle_hor_rpt_1280x800.png');
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+#gamecanvas{
+    padding-left: 50px;
+    background-color: rgb(245, 238, 238, 0.3);
+    border: 4px solid rgb(115, 192, 0);
+}
+.gameinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+#playername, h2, p{
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(255, 119, 0);
+    font-weight:bolder;
+}
+h2, p{
+    margin-right: 120px;
+}
+h2, #mun, #score{
+    color: rgb(255, 119, 0);
+}
+#timer, #scorelab{
+    font-size: 30px;
+    color: white;
+}
+#pop{
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 420px;
+    opacity: 0;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+#pop.open{
+    opacity: 1;
+    z-index: 999;
+    background-color: white;
+}
+.popinner{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+.popinner h2{
+    margin: 0;
+}
+.popinner p{
+    line-height: 24px;
+    margin: 10px 0;
+}
+.btn{
+    margin: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 119, 0);
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}

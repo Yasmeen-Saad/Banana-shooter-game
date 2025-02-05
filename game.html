@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/gamestyle.css" />
+    <link rel="icon" href="./images/monkey_head_400x400.png">
+    <title>Game Time</title>
+  </head>
+  <body>
+    <div id="pop" class="open">
+      <div class="popinner">
+        <h2 id="playername"></h2> <br>
+        <p>Are You Ready?</p> <br>
+        <button class="btn start">Start</button>
+        <button class="btn close">Close</button>
+      </div>
+    </div>
+    <div id="gameinfo">
+      <p>
+        <span id="timer"></span> of
+        <span id="mun"> 3 MINUTES</span>
+      </p>
+      <p id="scorelab">SCORE: <span id="score">0</span></p>
+    </div>
+    <canvas id="gamecanvas" width="1100px" height="490px"></canvas>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const username = localStorage.getItem("username");
+        document.getElementById("playername").textContent = "WELCOME "+ username || "Guest";
+      });
+    </script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
